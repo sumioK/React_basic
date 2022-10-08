@@ -1,6 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-import Article from './components/Article'
 
 function App() {
   return (
@@ -9,6 +8,14 @@ function App() {
         title={"新・日本一わかりやすいReact入門基礎編"}
         content={"今日のトピックはpropsについてです"}
         />
+      <Article
+        title={"新・日本一わかりやすいReact入門基礎編その2"}
+        content={"今日のトピックはhooksについてです"}
+        />
+      <Article
+        title={"新・日本一わかりやすいReact入門基礎編その3"}
+        content={"今日のトピックはこれまでの総まとめです"}
+      />
     </div>
   );
 }
