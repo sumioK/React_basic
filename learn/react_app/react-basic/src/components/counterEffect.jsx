@@ -9,9 +9,14 @@ const CounterEffect = () => {
         setCount(prevState => prevState - 1)
     }
     
-    useEffect(() => {
-        console.log("Current count is...", count)
-    })
+    // countが発火すると実行
+    useEffect(() => {console.log("Current count is...", count)},[count])
+    // 初回のみ実行
+    useEffect(() => {console.log("Current count is...", count)},[])
+    // 毎回実行(第二引数にcountを指定するのと同じ挙動)
+    useEffect(() => {console.log("Current count is...", count)})
+
+
     return(
         <div>
             <p>現在のカウント数: {count} </p>
