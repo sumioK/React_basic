@@ -7,9 +7,9 @@ import TextInput from './components/TextInput';
 function App() {
   return (
     <div className="App">
+      <TextInput />
       {/* <ToggleButton /> */}
       {/* <Counter /> */}
-      <TextInput />
     </div>
   );
 }

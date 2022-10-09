@@ -4,8 +4,8 @@ const TextInput = () => {
     const [name, setName] = useState('')
     
     const handleName = (event) => {
-        setName(event.target.value)
         console.log(event.target.value)
+        setName(event.target.value)
     }
 
     return(
